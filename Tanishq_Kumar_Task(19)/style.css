@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    max-height: 80px;
+    background: linear-gradient(135deg,#00d2ff,#3a7bd5);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    top: 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+#logoImg{
+    height: 65px;
+    width: 65px;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 3px solid white;
+}
+.navLinks{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+.navLinks a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s ease;
+}
+.username{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 18px;
+    background-color: rgba(255,255,255,0.18);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+#logOut{
+    padding: 10px 18px;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    color: #3a7bd5;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#logOut:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+main{
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.section{
+    flex: 1 1 500px;
+    min-width: 0;
+}
+#left-section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.addedItems,
+.bookingForm,
+#right-section{
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+}
+.addedItems{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.addedItems h2{
+    text-align: center;
+}
+#emptyMessage{
+    text-align: center;
+    margin-top: 15px;
+}
+#list-of-items{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+#total{
+    font-weight: bold;
+    margin-top: 20px;
+    
+}
+.bookingForm h2{
+    text-align: center;
+}
+.form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form label{
+    font-weight: bold;
+}
+.form input{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+}
+.form button{
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5763f9;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+#right-section{
+    overflow: hidden;
+}
+.imageContainer{
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    margin: 25px auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.serviceDescription{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#Price{
+    color: #6c70ea;
+    font-weight: bold;
+}
+.buttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#addBtn,
+#skipBtn{
+    flex: 1;
+    min-width: 140px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+#addBtn{
+    background-color: #e9f6ea;
+    color: #5f8f68;
+}
+#skipBtn{
+    background-color: #fef7f6;
+    color: #d33e5e;
+}
+#info{
+    margin-top: 20px;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#info p{
+    font-size: 12px;
+    color: #6c70ea;
+}
+#No-Items-Message{
+    color: red;
+    margin-top: 12px;
+    text-align: center;
+}
+#bookMessage{
+    color: green;
+    margin-top: 12px;
+    text-align: center;
+}

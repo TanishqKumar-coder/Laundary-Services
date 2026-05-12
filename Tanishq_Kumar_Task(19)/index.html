@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="logo">
+                <img src="/Images/Logo Image/laundry-service-logo-template-design-vector_20029-973.jpg" alt="Company Logo" id="logoImg">
+            </div>
+
+            <ul class="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <div class="username">
+                UserName
+            </div>
+            <button id="logOut">LogOut</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="section" id="left-section">
+            <div class="addedItems">
+                <h2>Added Items</h2>
+                <hr>
+                <h4 id="emptyMessage">No items added</h4>
+                <div id="list-Of-items"></div>
+                <div id="total"></div>
+            </div>
+
+            <div class="bookingForm">
+                <h2>Book Now</h2>
+                <hr>
+                <form action="#" class="form">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Full Nmae" required id="fullName">
+                    <label>Email ID</label>
+                    <input type="text" placeholder="Email Id" required id="email">
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="Phone Number" required id="phoneNumber">
+                    <button id="bookNow">Book Now</button>
+                    <p id="No-Items-Message"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="section"  id="right-section">
+            <h1>Browse Our Services</h1>
+            <p>Click on the add item to add services or press skip.</p>
+            <hr>
+            <div class="imageContainer">
+                <img id="serviceImage" src="/Images/Services_Imgs/Wash & Fold.png" alt="Service Image">
+
+            </div>
+            <div class="serviceDescription">
+                <h3 id="title">Wash & Fold</h3>
+                <h3 id="Price">₹200</h3>
+            </div>
+            <div class="buttons">
+                <button id="addBtn">Add Item</button>
+                <button id="skipBtn">Skip Item</button>
+            </div>
+            <i class="fa-solid fa-circle-info" id="info"><p id="cartInfo">Add the items to the cart and book now!</p></i>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
